@@ -1,0 +1,97 @@
+<html>
+
+<head>
+    <title>Web Page</title>
+    <style>
+        .body{
+    overflow: hidden;
+}
+
+.bg-img{
+    filter: blur(8px);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-size:cover;
+}
+.text{
+    color: black;
+    font-weight: bold;
+    font-size: 150%;
+    position: absolute;
+    margin-left: 46%;
+    top:10%;
+    transform: translate(-50%, -50%);
+    width: auto;
+    padding: 1%;
+    text-align: center;
+}
+.srtbtn1,.srtbtn2,.srtbtn3{
+    position:absolute;
+    display: inline-block;
+    top:50%;
+}
+.srtbtn1{
+    margin-left: 10%;
+}
+.srtbtn2{
+    margin-left: 75%;
+}
+.srtbtn3{
+    margin-left: 40%;
+}
+button {
+    color: black;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: 2px solid black;
+    cursor: pointer;
+    width: 100%;
+}
+p{
+    position: absolute;
+    color: rgb(228, 11, 11);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    top:93%;
+}
+    </style>>
+</head>
+
+<body>
+    <div class="bg-img">
+        <img src="./scott-graham-5fNmWej4tAA-unsplash.jpg" height="100%" width="100%">
+    </div>
+
+    <div class="text">
+        <h1>Face Based Attendance System</h1>
+    </div>
+
+    <div class="srtbtn1" >
+        <form action="{{url_for('start')}}" method="POST">
+            <button type="submit" onclick="alert('Face based attendance system is live !')">Start Attendance</button>
+        </form>
+    </div>
+
+    <div class="srtbtn2">
+        <form action="{{url_for('clear')}}" method="POST">
+
+                <button type="submit" onclick="alert('First send the mail Otherwise all file data is deletes !')">Clear
+                    Attendance</button>
+
+        </form>
+    </div>
+    <div class="srtbtn3">
+        <form action="{{url_for('send')}}" method="POST">
+
+                <button type="submit" onclick="alert('mail send sucessfully !')">Click
+                    Here to send attendance</button>
+
+        </form>
+    </div>
+
+    <p>Note: To Close the video capturing click Q in the video Section !</p>
+
+</body>
+
+</html>

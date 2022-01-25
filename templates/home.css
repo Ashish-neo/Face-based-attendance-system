@@ -1,0 +1,50 @@
+.body{
+    overflow: hidden;
+}
+
+.bg-img{
+    filter: blur(8px);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.text{
+    color: black;
+    font-weight: bold;
+    font-size: 150%;
+    position: absolute;
+    margin-left: 46%;
+    top:10%;
+    transform: translate(-50%, -50%);
+    width: auto;
+    padding: 1%;
+    text-align: center;
+}
+.srtbtn1,.srtbtn2,.srtbtn3{
+    position:absolute;
+    display: inline-block;
+    top:50%; 
+}
+.srtbtn1{
+    margin-left: 10%;
+}
+.srtbtn2{
+    margin-left: 40%;
+}
+.srtbtn3{
+    margin-left: 70%;
+}
+button {
+    color: black;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: 2px solid black;
+    cursor: pointer;
+    width: 100%;
+}
+p{
+    position: absolute;
+    color: rgb(228, 11, 11);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    top:93%;
+}
